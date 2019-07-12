@@ -1,5 +1,6 @@
 apply plugin: 'java'
 
+//comment or uncomment this line to see how the deterministic compiler prevents compiling the call to new Random()
 //apply from: '../deterministic.gradle'
 
 apply plugin: 'net.corda.plugins.cordapp'
