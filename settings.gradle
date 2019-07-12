@@ -1,0 +1,3 @@
+rootProject.name = 'cordapp-deterministic-tutorial'
+include 'contracts'
+
