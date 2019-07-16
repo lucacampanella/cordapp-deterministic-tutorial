@@ -5,3 +5,6 @@ Very small example on how deterministic corda compilation and modules work
 Inside sub-module `contracts` the file `ExamapleContract.java` contains a call to `new Random()`. If in 
 `contracts/build.gradle` the line `apply from: '../deterministic.gradle'` is commented out, this compiles. 
 Otherwise the module is built with the deterministic JDK and the deterministic Corda modules, thus it doesn't compile.
+
+## References
+Some of the code and ideas present in this repo are taken from [Cordapp-example-deterministic](https://github.com/corda/cordapp-example-deterministic)
