@@ -40,15 +40,16 @@ configurations {
     }
 }
 
+tasks.getByName("compileJava") {
+    options.compilerArgs << '-bootclasspath' << rt_jar
+}
+
 idea {
     module {
         jdkName project.property("deterministic_idea_sdk") as String
     }
 }
 
-tasks.getByName("compileJava") {
-    options.compilerArgs << '-bootclasspath' << rt_jar
-}
 
 dependencies {
     jdk "net.corda:deterministic-rt:latest.integration:api"
